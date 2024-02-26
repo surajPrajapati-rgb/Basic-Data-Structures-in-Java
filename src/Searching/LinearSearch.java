@@ -14,7 +14,6 @@ public class LinearSearch {
             if (arr[i] == key){
                 return i;
             }
-
         }
         return -1; // not found
     }

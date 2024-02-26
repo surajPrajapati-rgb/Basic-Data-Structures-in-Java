@@ -1,7 +1,7 @@
 package Sorting;
 
-class SelectionSort {
-    int[]  selectionSort(int[] arr) {
+public class SelectionSort {
+    public int[]  selectionSort(int[] arr) {
         int n = arr.length;
         // One by one move the boundary of the unsorted subarr
         for (int i = 0; i < n - 1; i++) {

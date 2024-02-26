@@ -1,7 +1,8 @@
 package Searching;
 
-class BinarySearch {
-    int binarySearch(int arr[], int element, int low, int high) {
+public class BinarySearch {
+    public int binarySearch(int[] arr, int element) {
+        int low =0,  high=arr.length-1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == element)
@@ -13,7 +14,8 @@ class BinarySearch {
         }
         return -1;
     }
-    int binarySearch(double arr[], double element, int low, int high) {
+    public int binarySearch(double[] arr, double element) {
+        int low =0,  high=arr.length-1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == element)
