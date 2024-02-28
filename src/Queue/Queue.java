@@ -3,7 +3,6 @@ public class Queue {
     int SIZE = 5;
     int[] items = new int[SIZE];
     int front, rear;
-
     Queue() {
         front = -1;
         rear = -1;
