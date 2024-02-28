@@ -10,7 +10,6 @@ public class LinkedList {
             next = null;
         }
     }
-
     public static LinkedList insert(LinkedList list, int data)
     {
         Node new_node = new Node(data);
@@ -24,10 +23,8 @@ public class LinkedList {
             while (last.next != null) {
                 last = last.next;
             }
-
             last.next = new_node;
         }
-
         return list;
     }
 
