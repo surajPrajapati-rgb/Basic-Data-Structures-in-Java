@@ -7,12 +7,15 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        //Searching Examples
+        // Sample example
         int[] arr = {10,12,9,4,15,23,15,20,5};
-        int linearIndex = LinearSearch.linearSearch(arr, 23);
-        System.out.println("Linear search found element at index: " + linearIndex);
 
-        int biIndex = LinearSearch.linearSearch(arr, 15);
+        //Searching Examples
+        LinearSearch ls = new LinearSearch();
+        int linearIndex = ls.linearSearch(arr,15);
+        System.out.println("Linear search found element at index: " + linearIndex);
+        BinarySearch bis = new BinarySearch();
+        int biIndex = bis.binarySearch(arr, 15);
         System.out.println("Binary search found element at index: " + biIndex);
         System.out.println("\n");
 
@@ -33,6 +36,8 @@ public class Main {
         QuickSort qs = new QuickSort();
         System.out.println("Quick sorted array: " + Arrays.toString(qs.sort(array)));
         System.out.println("\n");
+
+        System.out.println("Stack's operations :  ");
         Stack st = new Stack(5); // Create a new stack with a size of 5st.pop();
         st.push(1);
         st.push(2);
@@ -42,6 +47,7 @@ public class Main {
         st.pop();
 
         System.out.println("\n");
+        System.out.println("Queue's operations :  ");
         Queue q = new Queue();
         q.deQueue();
         for(int i = 1; i < 6; i ++) {
@@ -52,9 +58,11 @@ public class Main {
         q.deQueue();
         q.display();
 
-        System.out.println("We are going to create our linked list...");
+        System.out.println("\n");
+        System.out.println("LinkedList's operations :  ");
         LinkedList myList = new LinkedList();
         myList.insertNodeAtPosition(10, 2);
+        myList.showElements();
         myList.deleteAtFirst();
         myList.insertNodeAtFirst(5);
         myList.showElements();
