@@ -3,7 +3,7 @@ public class Queue {
     int SIZE = 5;
     int[] items = new int[SIZE];
     int front, rear;
-    Queue() {
+    public Queue() {
         front = -1;
         rear = -1;
     }
@@ -17,7 +17,7 @@ public class Queue {
     boolean isEmpty() {
         return front == -1;
     }
-    void enQueue(int element) {
+    public void enQueue(int element) {
         if (isFull()) {
             System.out.println("Queue is full");
         }
@@ -30,7 +30,7 @@ public class Queue {
             System.out.println("Insert " + element);
         }
     }
-    int deQueue() {
+    public int deQueue() {
         int element;
         if (isEmpty()) {
             System.out.println("Queue is empty");
@@ -49,7 +49,7 @@ public class Queue {
             return (element);
         }
     }
-    void display() {
+    public void display() {
         int i;
         if (isEmpty()) {
             System.out.println("Empty Queue");

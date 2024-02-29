@@ -1,7 +1,7 @@
 package Sorting;
 
 public class QuickSort {
-    public int[] quickSort(int[] array){
+    public int[] sort(int[] array){
         int low=0, high=array.length-1;
         applyQuickSort(array, low, high);
         return array;

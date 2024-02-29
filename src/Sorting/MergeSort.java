@@ -1,7 +1,7 @@
 package Sorting;
-public class MergeSort {
 
-    public int[] mergeSort(int[] array){
+public class MergeSort {
+    public int[] sort(int[] array){
         applyMergeSort(array, 0, array.length - 1);
         return array;
     }

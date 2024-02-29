@@ -1,9 +1,9 @@
 package Sorting;
 
 public class SelectionSort {
-    public int[]  selectionSort(int[] arr) {
+    public int[]  sort(int[] arr) {
         int n = arr.length;
-        // One by one move the boundary of the unsorted subarr
+        // One by one move the boundary of the unsorted subarray
         for (int i = 0; i < n - 1; i++) {
             // Find the minimum element in the unsorted arr
             int minIndex = i;

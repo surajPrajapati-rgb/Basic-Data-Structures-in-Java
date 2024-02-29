@@ -19,14 +19,14 @@ public class LinkedList {
         }
         return size;
     }
-    void insertNodeAtFirst(int data) {
+    public void insertNodeAtFirst(int data) {
         Node newNode = new Node(data);
         if (head != null) {
             newNode.next = head;
         }
         head = newNode;
     }
-    void insertNodeAtLast(int data) {
+    public void insertNodeAtLast(int data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -40,7 +40,7 @@ public class LinkedList {
             node2ndLast.next = newNode;
         }
     }
-    void insertNodeAtPosition(int data, int pos){
+    public void insertNodeAtPosition(int data, int pos){
         Node newNode = new Node(data);
         if(pos<0){
             System.out.println("Invalid position to insert ");
@@ -67,7 +67,7 @@ public class LinkedList {
                 }
             }
         }
-        void deleteAtFirst(){
+        public void deleteAtFirst(){
             if(head==null){
                 System.out.println("The list is empty, can't delete anything");
             }
@@ -81,7 +81,7 @@ public class LinkedList {
                 }
             }
         }
-    void deleteAtLast(){
+    public void deleteAtLast(){
         if(head==null){
             System.out.println("The list is empty, can't delete anything");
         }
@@ -101,7 +101,7 @@ public class LinkedList {
             }
         }
     }
-    void deleteAtPosition(int pos) {
+    public void deleteAtPosition(int pos) {
         if (pos < 0) {
             System.out.println("Invalid position to delete ");
         } else {
