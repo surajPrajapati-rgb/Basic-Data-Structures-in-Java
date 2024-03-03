@@ -37,6 +37,7 @@ public class Main {
         System.out.println("Quick sorted array: " + Arrays.toString(qs.sort(array)));
         System.out.println("\n");
 
+        //Stack operations examples
         System.out.println("Stack's operations :  ");
         Stack st = new Stack(5); // Create a new stack with a size of 5st.pop();
         st.push(1);
@@ -47,6 +48,7 @@ public class Main {
         st.pop();
 
         System.out.println("\n");
+        //Queue operations examples
         System.out.println("Queue's operations :  ");
         Queue q = new Queue();
         q.deQueue();
@@ -57,8 +59,9 @@ public class Main {
         q.display();
         q.deQueue();
         q.display();
-
         System.out.println("\n");
+
+        //LinkedLists operations examples
         System.out.println("LinkedList's operations :  ");
         LinkedList myList = new LinkedList();
         myList.insertNodeAtPosition(10, 2);

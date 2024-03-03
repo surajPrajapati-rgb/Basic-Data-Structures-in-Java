@@ -1,0 +1,22 @@
+
+This Java program consists of implementations for various data structures and algorithms. It includes packages for searching, sorting, stack, queue, and linked list operations. Each package contains classes and methods for performing relevant operations efficiently.
+
+Here's a high-level structure of the program:
+
+1. Searching Package:
+   - Contains classes for linear and binary search algorithms.
+
+2. Sorting Package:
+   - Contains classes for five different sorting algorithms (e.g., bubble sort, selection sort, insertion sort, merge sort, quick sort).
+
+3. Stack Package:
+   - Implements a stack data structure using arrays.
+   - Includes basic stack operations such as push, pop, peek, and isEmpty.
+
+4. Queue Package:
+   - Implements a queue data structure using arrays.
+   - Includes basic queue operations such as enqueue, dequeue, peek, and isEmpty.
+
+5. LinkedList Package:
+   - Implements a singly linked list data structure.
+   - Includes operations for insertion, deletion (at first as well as last), traversal, and searching within the linked list.
