@@ -1,11 +1,14 @@
 package Queue;
 public class Queue {
-    int SIZE = 5;
-    int[] items = new int[SIZE];
+    int SIZE;
+//    int lengthQueue;
+    int[] items;
     int front, rear;
-    public Queue() {
+    public Queue(int s) {
         front = -1;
         rear = -1;
+        this.items = new int[s];
+        this.SIZE = s;
     }
     boolean isFull() {
         if (front == 0 && rear == SIZE - 1) {
@@ -14,7 +17,7 @@ public class Queue {
         return false;
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return front == -1;
     }
     public void enQueue(int element) {
@@ -49,6 +52,7 @@ public class Queue {
             return (element);
         }
     }
+
     public void display() {
         int i;
         if (isEmpty()) {
